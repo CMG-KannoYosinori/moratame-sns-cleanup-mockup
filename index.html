@@ -7,39 +7,6 @@
 
 
 
-<script>
-  (function(i,s,o,g,r,a,m) { i['GoogleAnalyticsObject']=r;i[r]=i[r]||function() {
-  (i[r].q=i[r].q||[]).push(arguments) } ,i[r].l=1*new Date();a=s.createElement(o),
-  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-  } )(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
-
-  ga('create', 'UA-25457461-1', 'auto');
-  ga('require', 'GTM-WP8Q2V7');
-  ga('send', 'pageview');
-</script>
-
-<style>.async-hide { opacity: 0 !important } </style>
-<script>(function(a,s,y,n,c,h,i,d,e) { s.className+=' '+y;h.start=1*new Date;
-h.end=i=function() { s.className=s.className.replace(RegExp(' ?'+y),'') } ;
-(a[n]=a[n]||[]).hide=h;setTimeout(function() { i();h.end=null } ,c);h.timeout=c;
- } )(window,document.documentElement,'async-hide','dataLayer',4000,
- { 'GTM-WP8Q2V7':true } );</script>
-
-    
-                <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
-        new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
-        j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
-        'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-        })(window,document,'script','dataLayer','GTM-TPJVX9');</script>
-
-        <!-- D&Mタグ設置202106 -->
-        <!-- Google Tag Manager -->
-        <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
-        new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
-        j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
-        'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-        })(window,document,'script','dataLayer','GTM-NK8R923');</script>
-        <!-- End Google Tag Manager -->
 
     
     <meta charset="Shift_JIS">
@@ -57,7 +24,7 @@ h.end=i=function() { s.className=s.className.replace(RegExp(' ?'+y),'') } ;
     <link rel="shortcut icon" href="https://www.moratame.net/favicon.ico?2026111715">
     <link rel="apple-touch-icon-precomposed" href="https://www.moratame.net/apple-touch-icon.png?2026111715">
 
-    <link rel="stylesheet" type="text/css" href="https://www.moratame.net/css/icon-font/style.css?2026111715">
+    <link rel="stylesheet" type="text/css" href="css/icon-font/style.css">
     <link rel="stylesheet" type="text/css" href="https://www.moratame.net/css/bootstrap.v3.3.7--scope.css?2026111715">
 
     <link rel="stylesheet" type="text/css" href="https://www.moratame.net/css/reset.css?2026111715">
@@ -109,11 +76,7 @@ h.end=i=function() { s.className=s.className.replace(RegExp(' ?'+y),'') } ;
 
         <script async src="https://securepubads.g.doubleclick.net/tag/js/gpt.js"></script>
 
-    <!-- BID STRAPスクリプトの読み込み -->
-    <script async src="https://fam.adingo.jp/bid-strap/moratame/pb.js"></script>
     <script>
-        var bsttag = window.bsttag || {cmd: []};
-        bsttag.failSafeTimeout = 2000; //header bidding全体のタイムアウト
         var googletag = googletag || {};
         googletag.cmd = googletag.cmd || [];
     </script>
@@ -144,26 +107,11 @@ h.end=i=function() { s.className=s.className.replace(RegExp(' ?'+y),'') } ;
 
         
 
-        googletag.pubads().enableSingleRequest();
-        googletag.pubads().disableInitialLoad();
+        googletag.setConfig({singleRequest: true, disableInitialLoad: true});
         googletag.enableServices();
-
-        bsttag.cmd.push(function(cmd) {
-            cmd.requestBids();
-        });
+        googletag.pubads().refresh();
 
     });
-    </script>
-        <!-- BID STRAP対応 prebidが間に合わなかった場合の処理 -->
-    <script>
-        setTimeout(function () {
-            if (!bsttag.isRequestSent) {
-                bsttag.isRequestSent = true;
-                googletag.cmd.push(function() {
-                    googletag.pubads().refresh();
-                });
-            }
-        }, bsttag.failSafeTimeout);
     </script>
 
     <!-- Start KARTE Tag -->
@@ -244,14 +192,6 @@ h.end=i=function() { s.className=s.className.replace(RegExp(' ?'+y),'') } ;
 
 
     
-                <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-TPJVX9"
-        height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
-
-        <!-- G&Mタグ設置202106 -->
-        <!-- Google Tag Manager (noscript) -->
-        <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-NK8R923"
-        height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
-        <!-- End Google Tag Manager (noscript) -->
 
     
         
@@ -329,7 +269,7 @@ h.end=i=function() { s.className=s.className.replace(RegExp(' ?'+y),'') } ;
                                                 <li>
                             <a href="https://www.moratame.net/favorite/clip_list.php" class="p9225-masthead__button" style="background-color: rgba(235, 101,27);" data-track-trigger="click-a" data-track-name="pc_header_cta_cliplist">
                                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 22 47" width="12" height="12" data-track-trigger="click-other" data-track-name="pc_header_cta_cliplist">
-                                    <path d="M11,47C2.3,47,0,39.8,0,36V0h4v36c0.01,0.71,0.26,7,7,7c6.74,0,6.99-6.29,7-7.01V11h-5v25H9V7h13v29C22,39.8,19.7,47,11,47z;" data-track-trigger="click-other" data-track-name="pc_header_cta_cliplist" style="fill: #fff; ?>;"></path>
+                                    <path d="M11,47C2.3,47,0,39.8,0,36V0h4v36c0.01,0.71,0.26,7,7,7c6.74,0,6.99-6.29,7-7.01V11h-5v25H9V7h13v29C22,39.8,19.7,47,11,47z" data-track-trigger="click-other" data-track-name="pc_header_cta_cliplist" style="fill: #fff;"></path>
                                 </svg>
                                 クリップリスト
                             </a>
@@ -1868,7 +1808,7 @@ h.end=i=function() { s.className=s.className.replace(RegExp(' ?'+y),'') } ;
         <!-- news -->
                 <div class="se-news">
           <h1 class="heading">モラタメTOPICS</h1>
-          <div class="container"><ul class="newsListWrap"><li><a href="https://www.moratame.net/wp/support/" ">「PayPal」取り扱い終了のお知らせ</a><img src="https://image.moratame.net/images/common/today_icon_oshirase.png" style="vertical-align: middle" /><img src="https://image.moratame.net/images/tracking.gif" onload="ga('send', 'event', '202611140000_https://www.moratame.net/wp/support/', 'impression', 'pc');"></li><li><a href="https://www.moratame.net/detail/tamesu.php?project_id=870d4">今日のおすすめ、見逃し厳禁！！</a><span class="itemicon itemIcoEmr">オススメ</span><img src="https://image.moratame.net/images/tracking.gif" onload="ga('send', 'event', '202611140000_870d4', 'impression', 'pc');"></li><li><a href="https://www.moratame.net/detail/tamesu.php?project_id=7614d">口臭ケアついでに美容ケア！</a><img src="https://image.moratame.net/images/common/today_icon_cake.png" style="vertical-align: middle" /><img src="https://image.moratame.net/images/tracking.gif" onload="ga('send', 'event', '202611140000_7614d', 'impression', 'pc');"></li><li><a href="https://www.moratame.net/detail/tamesu.php?project_id=81064">乾燥が気になる季節の対策品3点セット</a><img src="https://image.moratame.net/images/common/today_icon_health.png" style="vertical-align: middle" /><img src="https://image.moratame.net/images/tracking.gif" onload="ga('send', 'event', '202611140000_81064', 'impression', 'pc');"></li><li><a href="https://www.moratame.net/detail/tamesu.php?project_id=bcba7">いつもの夜が華やぐ、新スパークリング</a><img src="https://image.moratame.net/images/common/today_icon_drink.png" style="vertical-align: middle" /><img src="https://image.moratame.net/images/tracking.gif" onload="ga('send', 'event', '202611140000_bcba7', 'impression', 'pc');"></li><li><a href="https://www.moratame.net/detail/tamesu.php?project_id=9872c">かっさと美容クリームがひとつに◎</a><img src="https://image.moratame.net/images/common/today_icon_beauty.png" style="vertical-align: middle" /><img src="https://image.moratame.net/images/tracking.gif" onload="ga('send', 'event', '202611140000_9872c', 'impression', 'pc');"></li></ul>            <div class="announcement blockLink blockLinkSelf">
+          <div class="container"><ul class="newsListWrap"><li><a href="https://www.moratame.net/wp/support/" ">「PayPal」取り扱い終了のお知らせ</a><img src="https://image.moratame.net/images/common/today_icon_oshirase.png" style="vertical-align: middle" /></li><li><a href="https://www.moratame.net/detail/tamesu.php?project_id=870d4">今日のおすすめ、見逃し厳禁！！</a><span class="itemicon itemIcoEmr">オススメ</span></li><li><a href="https://www.moratame.net/detail/tamesu.php?project_id=7614d">口臭ケアついでに美容ケア！</a><img src="https://image.moratame.net/images/common/today_icon_cake.png" style="vertical-align: middle" /></li><li><a href="https://www.moratame.net/detail/tamesu.php?project_id=81064">乾燥が気になる季節の対策品3点セット</a><img src="https://image.moratame.net/images/common/today_icon_health.png" style="vertical-align: middle" /></li><li><a href="https://www.moratame.net/detail/tamesu.php?project_id=bcba7">いつもの夜が華やぐ、新スパークリング</a><img src="https://image.moratame.net/images/common/today_icon_drink.png" style="vertical-align: middle" /></li><li><a href="https://www.moratame.net/detail/tamesu.php?project_id=9872c">かっさと美容クリームがひとつに◎</a><img src="https://image.moratame.net/images/common/today_icon_beauty.png" style="vertical-align: middle" /></li></ul>            <div class="announcement blockLink blockLinkSelf">
               <p class="catch"><img src="https://image.moratame.net/img2014/common/catch01.png" height="61" width="273" alt=""></p>
               <div class="unit cf">
                 <p class="col-l"><a href="https://www.moratame.net/detail/tamesu.php?project_id=b3367" target="_blank"></a><img src="https://image.moratame.net/img/project/15131_item_20261028_164602.webp" height="320" width="320" alt="めぐりズム 蒸気の温熱シート 肌に直接貼るタイプ オアシスロー…" class="thumbnail"></p>
@@ -3006,25 +2946,6 @@ document.write("</a>");
 
     
 
-    <div style="margin-top:-19px;">
-        <!-- Google Code for &#12522;&#12510;&#12540;&#12465;&#12486;&#12451;&#12531;&#12464; &#12479;&#12464; -->
-        <!-- Remarketing tags may not be associated with personally identifiable information or placed on pages related to sensitive categories. For instructions on adding this tag and more information on the above requirements, read the setup guide: google.com/ads/remarketingsetup -->
-        <script type="text/javascript">
-        /* <![CDATA[ */
-        var google_conversion_id = 997712011;
-        var google_conversion_label = "WZNYCK2O6AMQi8Hf2wM";
-        var google_custom_params = window.google_tag_params;
-        var google_remarketing_only = true;
-        /* ]]> */
-        </script>
-        <script src="https://www.googleadservices.com/pagead/conversion.js" async></script>
-        <noscript>
-            <div style="display:inline;">
-                <img height="1" width="1" style="border-style:none;" alt=""
-                    src="https://googleads.g.doubleclick.net/pagead/viewthroughconversion/997712011/?value=0&amp;label=WZNYCK2O6AMQi8Hf2wM&amp;guid=ON&amp;script=0" />
-            </div>
-        </noscript>
-    </div>
 
 
     
@@ -3046,211 +2967,7 @@ document.write("</a>");
 
     <script src="https://cdn.jsdelivr.net/gh/kenwheeler/slick@1.8.1/slick/slick.min.js"></script><script src="https://www.moratame.net/js/mamahalo-slider.js?2026111715"></script><!-- /mamahalo-slider -->
 
-<script type="text/javascript">
-$(document).ready(function()
-{
-    var param = {limit : 4, user_id : ""};
-    $.ajax({
-        type: "POST",
-        url: "https://www.moratame.net/ajax/request_tentame_enq.php",
-        data: JSON.stringify(param),
-        dataType: "json",
 
-        success: function(data)
-        {
-            // HTML構築
-            if (data.count > 0) {
-
-                // お店でタメすの枠を表示
-                $("#mitsukeru").append('\
-                    <div class="heading xx-large enclosingBtn withIcon">\
-                        <h1>\
-                            <span class="icoWrap">\
-                                <img src="https://image.moratame.net/img2014/icons/ico15.png" alt="" width="81" height="77">\
-                            </span>\
-                            <span class="">お店でタメす。</span>\
-                            <span class="heading__sub-title">参加受付中！</span>\
-                        </h1>\
-                        <p id="popupTriger04" class="btnWrap">\
-                            <a href="https://www.moratame.net/detail/mitsukerulist.php" class="btnBean01 btnFind">お店でタメすとは？</a>\
-                        </p>\
-                        <p id="popup04" class="popup" style="display: none;">\
-                            対象商品を<br>\
-                            お店で見つけて試そう♪\
-                        </p>\
-                    </div>\
-                ');
-
-
-                $("#mitsukeru").append('<div class="row" id="find-item">');
-
-                var x = 1;
-                for (index in data.list) {
-                    var enq = data.list[index];
-                    var zan = parseInt(enq.offer_count) - parseInt(enq.user_count);
-                    var is_few = enq.is_few;
-
-                    // 現在日時取得
-                    date = new Date();
-                    yy = date.getYear();
-                    mm = date.getMonth() + 1;
-                    dd = date.getDate();
-                    hh = date.getHours();
-                    ii = date.getMinutes();
-                    ss = date.getSeconds();
-                    if (yy < 2000) { yy += 1900; }
-                    if (mm < 10) { mm = "0" + mm; }
-                    if (dd < 10) { dd = "0" + dd; }
-                    if (hh < 10) { hh = "0" + hh; }
-                    if (ii < 10) { ii = "0" + ii; }
-                    if (ss < 10) { ss = "0" + ss; }
-                    var now = yy + "-" + mm + "-" + dd + " " + hh + ":" + ii + ":" + ss;
-
-                    // 開始日の翌日取得
-                    var year  = enq.start_date.substr(0,4);
-                    var month = enq.start_date.substr(5,2);
-                    var date  = enq.start_date.substr(8,2);
-                    var time  = enq.start_date.substr(11);
-                    var obj = nextDate(year,month,date);
-                    if (obj.month < 10) {
-                        month = "0" + obj.month
-                    } else {
-                        month = obj.month;
-                    }
-                    if (obj.date  < 10) {
-                        date  = "0" + obj.date
-                    } else {
-                        date = obj.date
-                    }
-                    var new_date = obj.year + "-" + month + "-" + date + " " + time;
-                    if (x % 2 == 0) {
-                        var control = 'r';
-                    } else {
-                        var control = 'l';
-                    }
-
-                    var html;
-                    var icon;
-
-                    if (enq.stat == "2") {
-                        // 回答済
-                        icon = '<p class="badge cardBadge already">回答済み</p>';
-                    } else if (is_few === true ) {
-                        // 残りわずか
-                        icon = '<p class="badge cardBadge few">残りわずか</p>';
-                    } else if (now < new_date) {
-                        // NEW
-                        icon = '<p class="badge cardBadge new">NEW</p>';
-                    } else {
-                        // アイコン無し
-                        icon = '';
-
-                    }
-
-                    var disp_count = enq.count;
-
-                    //カンマクギリ
-                    disp_count = String( enq.count ).replace( /(\d)(?=(\d\d\d)+(?!\d))/g, '$1,' );
-
-
-                    if(x == 1){
-
-                        html  = '<div class="col-xs-4 col-md-3 col-lg-2 col-lg-offset-2">';
-
-                    }else{
-
-                        html  = '<div class="col-xs-4 col-md-3 col-lg-2">';
-
-                    }
-
-                    html += '\
-                            <a href="https://www.moratame.net/detail/mitsukeru.php?projectId=' + enq.id +'">\
-                                <div class="p-card p-card--top blockLink heightLine--mitsu" title="' + enq.product_name + '">\
-                                    <p class="item">\
-                                        <img alt="' + enq.product_name + '" class="item thumbnail img-responsive" height="320" src="' + enq.product_image + '" width="320" title="' + enq.product_name + '">\
-                                    </p>\
-                                    <div class="p-card__detail">\
-                                        <p>' + enq.company + '</p>\
-                                        <p>' + enq.product_name + '</p>\
-                    ';
-
-                    if(
-                        enq.id !== "DH0000001586"
-                        && enq.id !== "DH0000001603"
-                        && enq.id !== "DH0000001604"
-                        && enq.id !== "DH0000001605"
-                        && enq.id !== "DH0000001606"
-                        && enq.id !== "DH0000001612"
-                        && enq.id !== "DH0000001613"
-                        && enq.id !== "DH0000001614"
-                        && enq.id !== "DH0000001615"
-                        && enq.id !== "DH0000001616"
-                        && enq.id !== "DH0000001617"
-                        && enq.id !== "DH0000001618"
-                        && enq.id !== "DH0000001619"
-                        && enq.id !== "DH0000001620"
-                        && enq.id !== "DH0000001621"
-                        && enq.id !== "DH0000001622"
-                        && enq.id !== "DH0000001629"
-                    ){
-
-                        if(enq.is_hide_count === 1){
-                            html += '<p class="count">募集人数あと<span class="c_red">' + disp_count + '</span>名</p>';
-                        }
-                    }
-
-                    html += icon;
-                    html += '\
-                                    </div>\
-                                </div>\
-                            </a>\
-                        </div>\
-                    ';
-
-                    $("#find-item").append(html);
-
-                    x++;
-                }
-
-                $("#mitsukeru").append('</div>');
-
-
-                $("#mitsukeru").append('\
-                    <!-- btnGroup -->\
-                    <div class="mt_20">\
-                        <p class="ta_c fz_14">\
-                            今参加できる商品は <span class="c_red">' + data.count + '</span> 件\
-                        </p>\
-                        <p class="w-60per-c btnSquare01wrap">\
-                            <a href="https://www.moratame.net/detail/mitsukerulist.php" class="btnSquare01 btnBeige01 medium">\
-                                お店でタメす商品一覧\
-                                <span class="arrow">\
-                                    <img src="https://image.moratame.net/img2014/icons/arrow03.png" alt="" width="20" height="32" title="">\
-                                </span>\
-                            </a>\
-                        </p>\
-                    </div>\
-                    <!-- /btnGroup -->\
-                ');
-            }
-        },
-        error: function(XMLHttpRequest, textStatus, errorThrown){ }
-    });
-
-    return false;
-});
-
-function nextDate(year,month,date){
-    var todayTime = new Date(year,month-1,date).getTime();
-    var nextDateTime = todayTime + 60*60*24*1000;
-    nextDateTime = new Date(nextDateTime);
-    return {
-        year:nextDateTime.getFullYear() ,
-        month:nextDateTime.getMonth()+1 ,
-        date:nextDateTime.getDate()
-    }
-}
-</script>
 
 
     
@@ -3258,21 +2975,6 @@ function nextDate(year,month,date){
 
     
 
-        <!-- Yahoo Code for your Target List -->
-    <script>
-/* <![CDATA[ */
-var yahoo_retargeting_id = 'TCOKN75AEM';
-var yahoo_retargeting_label = '';
-var yahoo_retargeting_page_type = '';
-var yahoo_retargeting_items = [{
-    item_id: '',
-    category_id: '',
-    price: '',
-    quantity: ''
-}];
-/* ]]> */
-    </script>
-    <script src="https://b92.yahoo.co.jp/js/s_retargeting.js" async></script>
     
 
     <!-- remodal -->
