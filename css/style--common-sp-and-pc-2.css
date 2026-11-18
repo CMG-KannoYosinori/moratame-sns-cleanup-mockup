@@ -165,4 +165,37 @@
 .mtd-3028-sns-drawer > li.type3 + li.type3 {
   border-left: 1px solid #c9cab7;
 }
+
+.mtd-3028-x-logo--sns {
+  height: 44px;
+  width: 44px;
+}
+
+.mtd-3028-sns-glyph {
+  display: block;
+  height: 44px;
+  width: 44px;
+}
+
+.snsWrapper ul.snsList.mtd-3028-sns-list li {
+  float: left;
+  max-width: none;
+  width: calc(100% / 3);
+}
+
+.snsWrapper ul.snsList.mtd-3028-sns-list a {
+  display: flex;
+  justify-content: center;
+}
+
+#index14 .mtd-3028-sns-list img.mtd-3028-sns-glyph {
+  height: 44px;
+  width: 44px;
+}
+
+#index14 .mtd-3028-sns-list .mtd-3028-x-logo__mark {
+  height: auto;
+  max-width: 64%;
+  width: 64%;
+}
 /* /SNS 公式アカウント 更新 20261117 */
