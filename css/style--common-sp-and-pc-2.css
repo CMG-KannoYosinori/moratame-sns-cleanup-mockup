@@ -119,13 +119,50 @@
 }
 
 .mtd-3028-x-logo--account {
-  height: 48px;
-  width: 48px;
+  height: 32px;
+  width: 32px;
 }
 
 .mtd-3028-x-logo--drawer {
   height: 44px;
   margin-top: 10px;
   width: 44px;
+}
+
+.mtd-3028-x-logo--card {
+  display: flex;
+  height: 102px;
+  margin-left: auto;
+  margin-right: auto;
+  width: 102px;
+}
+
+.mtd-3028-x-logo--card .mtd-3028-x-logo__mark {
+  height: auto;
+  max-width: 64%;
+  width: 64%;
+}
+
+.mtd-3028-sns-card__label {
+  color: #000;
+}
+
+.p9255-p-sns .p9255-p-sns__card.p9255-p-sns__card--twitter .mtd-3028-sns-card__label.p9225-c-button__text::before {
+  background-color: #000;
+}
+
+.mtd-3028-sns-drawer {
+  display: flex;
+}
+
+.mtd-3028-sns-drawer > li.type3 {
+  border-bottom: 0;
+  border-right: 0;
+  float: none;
+  width: calc(100% / 3);
+}
+
+.mtd-3028-sns-drawer > li.type3 + li.type3 {
+  border-left: 1px solid #c9cab7;
 }
 /* /SNS 公式アカウント 更新 20261117 */
