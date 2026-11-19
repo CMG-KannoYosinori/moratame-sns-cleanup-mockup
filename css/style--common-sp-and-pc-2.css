@@ -133,11 +133,11 @@
   display: flex;
   margin-left: auto;
   margin-right: auto;
-  height: 102px;
-  width: 102px;
-  @media screen and (max-width: 424px) {
-    height: 51px;
-    width: 51px;
+  height: 51px;
+  width: 51px;
+  @media (width >= 425px) {
+    height: 102px;
+    width: 102px;
   }
 }
 
