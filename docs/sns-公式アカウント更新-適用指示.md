@@ -2,6 +2,17 @@
 
 モック（このリポジトリ）の見た目を本番テンプレートへ反映するための指示です。
 
+## 確認用URL
+
+GitHub Pages。
+
+| 画面                   | URL                                                                                     |
+| ---------------------- | --------------------------------------------------------------------------------------- |
+| PCトップ               | https://cmg-kannoyosinori.github.io/moratame-sns-cleanup-mockup/                        |
+| PC「モラタメとは」     | https://cmg-kannoyosinori.github.io/moratame-sns-cleanup-mockup/contents/about.html     |
+| スマホトップ           | https://cmg-kannoyosinori.github.io/moratame-sns-cleanup-mockup/s/                      |
+| スマホ「モラタメとは」 | https://cmg-kannoyosinori.github.io/moratame-sns-cleanup-mockup/s/contents/about.html   |
+
 ## 対象
 
 | 画面                                                          | 本番の目安                           | モック                              |
