@@ -131,10 +131,14 @@
 
 .mtd-3028-x-logo--card {
   display: flex;
-  height: 102px;
   margin-left: auto;
   margin-right: auto;
+  height: 102px;
   width: 102px;
+  @media screen and (max-width: 424px) {
+    height: 51px;
+    width: 51px;
+  }
 }
 
 .mtd-3028-x-logo--card .mtd-3028-x-logo__mark {
