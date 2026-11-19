@@ -147,7 +147,15 @@
   color: #000;
 }
 
-.p9255-p-sns .p9255-p-sns__card.p9255-p-sns__card--twitter .mtd-3028-sns-card__label.p9225-c-button__text::before {
+.p9255-p-sns
+  .p9255-p-sns__card.p9255-p-sns__card--twitter
+  .mtd-3028-sns-card__label.p9225-c-button__text::before {
+  background-color: #000;
+}
+
+.p9255-p-sns
+  .p9255-p-sns__card.p9255-p-sns__card--line
+  .mtd-3028-sns-card__label.p9225-c-button__text::before {
   background-color: #000;
 }
 
